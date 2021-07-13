@@ -46,8 +46,8 @@ $no = 1;
                         <strong>Data Feedback</strong>
                     </div>
                     <div class="card-body">
-                        <table class="table">
-                            <thead class="thead-secondary">
+                        <table class="table table-striped">
+                            <thead>
                                 <tr>
                                 <th scope="col">#</th>
                                 <th scope="col">Nama</th>
@@ -64,8 +64,8 @@ $no = 1;
                                     <td><?= $f['nim']?></td>
                                     <td><?= $f['feedback'] ?></td>
                                     <td>
-                                        <a class="btn btn-warning" href="#" role="button">Edit</a>
-                                        <a class="btn btn-danger ml-1" href="delete.php?id=<?= $f['id'] ?>" onclick="return confirm('Anda yakin akan menghapus data ini?')" >Delete</a>
+                                        <a class="btn btn-warning mb-2" href="editData.php?id=<?= $f['id'] ?>">Edit</a>
+                                        <a class="btn btn-danger ml-1 mb-2" href="delete.php?id=<?= $f['id'] ?>" onclick="return confirm('Anda yakin akan menghapus data ini?')" >Delete</a>
                                     </td>
                                 </tr>
                                 <?php endwhile; ?>
